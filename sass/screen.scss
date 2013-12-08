@@ -7,7 +7,14 @@
 @import "recipes";
 @import "lib/font";
 
+$color-text-default: #444;
+
 // Color palette: http://www.colourlovers.com/palette/92095/Giant_Goldfish
+$color-aio: #69D2E7;
+$color-clean-pondwater: #A7DBD8;
+$color-beach-storm: #E0E4CC;
+$color-giant-goldfish: #F38630;
+$color-unreal-food-pills: #FA6900;
 
 @include vertical-align-block-page;
 
@@ -20,13 +27,35 @@ header, section {
   font-size: 4vw;
 
   &:nth-child(even) {
-    background-color: #A7DBD8;
-    color: #444;
+    background-color: $color-clean-pondwater;
+    color: $color-text-default;
+
+    p {
+      a {
+        color: #444;
+        border-bottom: 1px solid $color-aio;
+
+        &:hover {
+          color: $color-aio;
+        }
+      }
+    }
   }
 
   &:nth-child(odd) {
-    background-color: #F38630;
-    color: #E0E4CC;
+    background-color: $color-giant-goldfish;
+    color: $color-beach-storm;
+
+    p {
+      a {
+        color: $color-beach-storm;
+        border-bottom: 1px solid $color-unreal-food-pills;
+
+        &:hover {
+          color: $color-unreal-food-pills;
+        }
+      }
+    }
   }
 
   .v-center {
@@ -42,6 +71,10 @@ header, section {
     &:last-child {
       margin-bottom: 0;
     }
+
+    a {
+      text-decoration: none;
+    }
   }
 }
 
@@ -55,13 +88,13 @@ section {
 
   &:nth-child(even) {
     p {
-      border-color: #69D2E7;
+      border-color: $color-aio;
     }
   }
 
   &:nth-child(odd) {
     p {
-      border-color: #FA6900;
+      border-color: $color-unreal-food-pills;
     }
   }
 

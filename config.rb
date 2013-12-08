@@ -1,3 +1,5 @@
+Encoding.default_external = 'utf-8'
+
 # Require any additional compass plugins here.
 require 'compass-recipes'
 
