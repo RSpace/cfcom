@@ -32,12 +32,7 @@ header, section {
 
     p {
       a {
-        color: #444;
-        border-bottom: 1px solid $color-aio;
-
-        &:hover {
-          color: $color-aio;
-        }
+        color: $color-text-default;
       }
     }
   }
@@ -49,11 +44,6 @@ header, section {
     p {
       a {
         color: $color-beach-storm;
-        border-bottom: 1px solid $color-unreal-food-pills;
-
-        &:hover {
-          color: $color-unreal-food-pills;
-        }
       }
     }
   }
@@ -74,6 +64,11 @@ header, section {
 
     a {
       text-decoration: none;
+      opacity: 0.8;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
